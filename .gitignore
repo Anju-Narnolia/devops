@@ -92,7 +92,4 @@ package-lock.json
 logs/
 *.out
 *.err
-
-Teraform/EC2/main.tf
-Teraform/s3/main.tf
 aws/boto-3/.env
