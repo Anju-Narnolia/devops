@@ -1,0 +1,64 @@
+# -----------------------------
+# Terraform
+# -----------------------------
+
+# Local .terraform directories
+**/.terraform/*
+**/.terraform.lock.hcl
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+terraform.tfstate.backup
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Override files (used for local changes)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Sensitive variable files (optional)
+secret.tfvars
+*.pem
+*.key
+*.p12
+*.crt
+
+# -----------------------------
+# AWS & Kubernetes related
+# -----------------------------
+
+# AWS CLI credentials
+.aws/
+.aws/credentials
+.aws/config
+
+# Kubernetes config
+.kube/
+config
+kubeconfig
+*.yaml.backup
+
+# -----------------------------
+# IDE / OS generated files
+# -----------------------------
+
+# VSCode / JetBrains / Mac / Windows
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Python virtual env (if you use automation)
+venv/
+__pycache__/
+*.pyc
+
+# Logs
+*.log

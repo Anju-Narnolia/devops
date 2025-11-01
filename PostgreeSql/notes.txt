@@ -1,0 +1,15 @@
+docker pull postgres:14.19-alpine3.21 --> instal postgree imaage in local
+
+ # docker run --name my_postgres \
+-e POSTGRES_USER=admin \
+-e POSTGRES_PASSWORD=abcde \
+-e POSTGRES_DB=mydb \
+-p 5413:5432 \
+-d postgres:14.19-alpine3.21 --> RUN POSGREE container 
+
+# docker exec -it my_postgres psql -U admin -d mydb --> execute the postgee container in terminal
+
+## postgres Commands
+\dt --> use to show all data
+\q --> exit postgres terminal
+SELECT * FROM users; -> use to print all data of a file

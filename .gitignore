@@ -1,0 +1,95 @@
+# ============================================
+# ��️ Terraform
+# ============================================
+**/.terraform/*
+**/.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+terraform.tfstate.backup
+*.tfvars
+*.tfvars.json
+secret.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+crash.log
+crash.*.log
+
+# ============================================
+# ☸️ Kubernetes
+# ============================================
+.kube/
+config
+kubeconfig
+*.yaml.backup
+*.yaml.tmp
+*.log
+*.out
+*.bak
+
+# Ignore local manifests or generated files
+k8s/generated/
+k8s/output/
+k8s/temp/
+
+# ============================================
+# 🐳 Docker
+# ============================================
+**/Dockerfile~
+**/docker-compose.override.yml
+**/docker-compose.yml
+**/build/
+**/dist/
+**/tmp/
+**/cache/
+**/.dockerignore
+.docker/
+
+# ============================================
+# 🪣 AWS
+# ============================================
+.aws/
+.aws/credentials
+.aws/config
+*.pem
+*.key
+*.p12
+*.crt
+
+# ============================================
+# ⚙️ Scripts / CI-CD
+# ============================================
+workspace/
+.jenkins/
+*.log
+*.tmp
+*.bak
+
+# ============================================
+# 🧰 General Dev / IDE Files
+# ============================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ============================================
+# 🐍 Python / Node.js (optional automation)
+# ============================================
+venv/
+__pycache__/
+*.pyc
+node_modules/
+package-lock.json
+
+# ============================================
+# 🧱 Logs & Misc
+# ============================================
+*.log
+logs/
+*.out
+*.err
+
