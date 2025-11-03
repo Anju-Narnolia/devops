@@ -1,0 +1,1 @@
+ssh -i ~/.ssh/flask-key.pem ubuntu@13.204.69.48

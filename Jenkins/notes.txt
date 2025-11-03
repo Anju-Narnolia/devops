@@ -10,6 +10,14 @@ echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
 https://pkg.jenkins.io/debian binary/ | sudo tee \
 /etc/apt/sources.list.d/jenkins.list > /dev/null
 
+#to run jenkins as docker image
+docker run -d \
+  -p 8080:8080 -p 50000:50000 \
+  -v jenkins_home:/var/jenkins_home \
+  --name jenkins \
+  jenkins/jenkins:lts
+
+
 #Install Jenkins
 sudo apt update -y
 sudo apt install jenkins -y
@@ -18,4 +26,11 @@ sudo apt install jenkins -y
 sudo systemctl start jenkins
 sudo systemctl enable jenkins
 sudo systemctl status jenkins
-sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+
+#getting password
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword ->from jenkins 
+docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword ->from docker image   90228b17d86744e78f24f989e239d68c
+
+
+
